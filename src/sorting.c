@@ -2,13 +2,13 @@
 
 #include <stdio.h>
 
-void bubbleSort(int arr[], int n, int *op);
+void bubbleSort(unsigned int arr[], int n, int *op);
 
 int main(void) // To test that it works
 {
-    int arr1[] = {6,3,9,10,1,3};
-    int arr2[] = {1,3,9,10,11,13};
-    int arr3[] = {13,11,10,9,3,1};
+    unsigned int arr1[] = {6,3,9,10,1,3};
+    unsigned int arr2[] = {1,3,9,10,11,13};
+    unsigned int arr3[] = {13,11,10,9,3,1};
     int n = 6;
     int op = 0;
 
@@ -38,7 +38,7 @@ int main(void) // To test that it works
     }
 }
 
-void bubbleSort(int arr[], int n, int *op)
+void bubbleSort(unsigned int arr[], int n, int *op)
 {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - 1; j++) {

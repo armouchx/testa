@@ -2,11 +2,11 @@
 
 #include <stdio.h>
 
-void bubbleSort(int arr[], int n);
+void bubbleSort(unsigned int arr[], int n);
 
 int main(void) // To test that it works
 {
-    int arr[] = {6,3,9,10,1,3};
+    unsigned int arr[] = {6,3,9,10,1,3};
     int n = 6;
 
     bubbleSort(arr, n);
@@ -26,7 +26,7 @@ int main(void) // To test that it works
 //         for j ← 0 to n − 2 − i do
 //             if A[j + 1] < A[j] swap A[j] and A[j + 1]
 
-void bubbleSort(int arr[], int n)
+void bubbleSort(unsigned int arr[], int n)
 {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - 1; j++) {
