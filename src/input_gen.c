@@ -1,7 +1,6 @@
 // Kristoffer & Abdulsalam
 
 #include <stdlib.h>
-#include <stdio.h>
 #include <time.h>
 
 #include "../include/input_gen.h"
@@ -76,9 +75,12 @@ unsigned int* almost_ordered(int n)
         prev = arr[i];
     }
 
-    for (int i = 0; i < swaps; i++) { // swap ≈4% of items
+    for (int i = 0; i < swaps; i++) { // swap ≈4% of items. TODO: Guard against unlikely, but possible scenario where the same items get swapped twice, resulting in no change.
         int i1 = rand() % n;
-        int i2 = rand() % n;
+        int i2;
+        do {
+            i2 = rand() % n;
+        } while (i2 == i1);
         int temp = arr[i1];
         arr[i1] = arr[i2];
         arr[i2] = temp;
@@ -86,6 +88,7 @@ unsigned int* almost_ordered(int n)
     return arr;
 }
 
+// #include <stdio.h>
 // int main(void) // For testing
 // {
     // int n = 100;
