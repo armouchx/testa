@@ -24,14 +24,14 @@ void bubbleSort(unsigned int arr[], int n)
     }
 }
 
-int main(void) // To test that it works
-{
-    unsigned int arr[] = {6,3,9,10,1,3};
-    int n = 6;
+// int main(void) // To test that it works
+// {
+//     unsigned int arr[] = {6,3,9,10,1,3};
+//     int n = 6;
 
-    bubbleSort(arr, n);
-    printf("sorted numbers:\n");
-    for (int i = 0; i < n; i++) {
-        printf("%d\n", arr[i]);
-    }
-}
+//     bubbleSort(arr, n);
+//     printf("sorted numbers:\n");
+//     for (int i = 0; i < n; i++) {
+//         printf("%d\n", arr[i]);
+//     }
+// }
