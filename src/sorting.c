@@ -1,5 +1,7 @@
 // Kristoffer & Abdulsalam
 
+#include "../include/sorting.h"
+
 void bubbleSort(unsigned int arr[], int n, int *op)
 {
     for (int i = 0; i < n - 1; i++) {

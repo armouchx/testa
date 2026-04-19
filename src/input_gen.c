@@ -7,7 +7,6 @@
 
 unsigned int* ordered(int n)
 {
-    srand(time(NULL));
     unsigned int * arr = malloc(sizeof(unsigned int) * n);
     if (arr == NULL) {
         return NULL;
@@ -25,7 +24,6 @@ unsigned int* ordered(int n)
 
 unsigned int* reverse(int n)
 {
-    srand(time(NULL));
     unsigned int * arr = malloc(sizeof(unsigned int) * n);
     if (arr == NULL) {
         return NULL;
@@ -43,7 +41,6 @@ unsigned int* reverse(int n)
 
 unsigned int* randomized(int n)
 {
-    srand(time(NULL));
     unsigned int * arr = malloc(sizeof(unsigned int) * n);
     if (arr == NULL) {
         return NULL;
@@ -59,7 +56,6 @@ unsigned int* randomized(int n)
 
 unsigned int* almost_ordered(int n)
 {
-    srand(time(NULL));
     unsigned int * arr = malloc(sizeof(unsigned int) * n);
     if (arr == NULL) {
         return NULL;

@@ -1,7 +1,7 @@
 // Kristoffer & Abdulsalam
 
-#ifndef CALC_H
-#define CALC_H
+#ifndef INPUT_GEN_H
+#define INPUT_GEN_H
 
 unsigned int* ordered(int n);
 unsigned int* reverse(int n);
