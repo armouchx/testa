@@ -2,7 +2,19 @@
 
 #include <stdio.h>
 
-void bubbleSort(unsigned int arr[], int n, int *op);
+void bubbleSort(unsigned int arr[], int n, int *op)
+{
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - 1; j++) {
+            *op += 1;
+            if (arr[j + 1] < arr[j]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
 
 int main(void) // To test that it works
 {
@@ -35,19 +47,5 @@ int main(void) // To test that it works
     printf("sorted numbers:\n");
     for (int i = 0; i < n; i++) {
         printf("%d\n", arr3[i]);
-    }
-}
-
-void bubbleSort(unsigned int arr[], int n, int *op)
-{
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - 1; j++) {
-            *op += 1;
-            if (arr[j + 1] < arr[j]) {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
     }
 }

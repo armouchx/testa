@@ -2,20 +2,6 @@
 
 #include <stdio.h>
 
-void bubbleSort(unsigned int arr[], int n);
-
-int main(void) // To test that it works
-{
-    unsigned int arr[] = {6,3,9,10,1,3};
-    int n = 6;
-
-    bubbleSort(arr, n);
-    printf("sorted numbers:\n");
-    for (int i = 0; i < n; i++) {
-        printf("%d\n", arr[i]);
-    }
-}
-
 // Bubble sort
 // Sorts a given array by bubble sort
 // Input: An array A[0..n − 1] of orderable elements
@@ -25,7 +11,6 @@ int main(void) // To test that it works
 //     for i ← 0 to n − 2 do
 //         for j ← 0 to n − 2 − i do
 //             if A[j + 1] < A[j] swap A[j] and A[j + 1]
-
 void bubbleSort(unsigned int arr[], int n)
 {
     for (int i = 0; i < n - 1; i++) {
@@ -36,5 +21,17 @@ void bubbleSort(unsigned int arr[], int n)
                 arr[j + 1] = temp;
             }
         }
+    }
+}
+
+int main(void) // To test that it works
+{
+    unsigned int arr[] = {6,3,9,10,1,3};
+    int n = 6;
+
+    bubbleSort(arr, n);
+    printf("sorted numbers:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d\n", arr[i]);
     }
 }
