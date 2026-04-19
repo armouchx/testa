@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <time.h>
 
+#include "../include/input_gen.h"
 
 unsigned int* ordered(int n)
 {
@@ -65,10 +66,7 @@ unsigned int* almost_ordered(int n)
 
     for (int i = 0; i < swaps; i++) { // swap ≈4% of items
         int i1 = rand() % n;
-        printf("i1 = %d, arr[i1] = %d\n", i1, arr[i1]);
         int i2 = rand() % n;
-        printf("i2 = %d, arr[i2] = %d\n", i2, arr[i2]);
-        printf("swapping %d(%d) with %d(%d)\n", i1, arr[i1], i2, arr[i2]);
         int temp = arr[i1];
         arr[i1] = arr[i2];
         arr[i2] = temp;
